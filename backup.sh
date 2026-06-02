@@ -152,14 +152,14 @@ dbDir=$(find /etc /opt/freedom /usr/local \
 if [[ -n "${dbDir}" ]]; then
   echo "The folder exists at $dbDir"
   if [[ $dbDir == "/opt/freedom/x-ui"* ]]; then
-    dbDir="${dbDir}/db/x-ui.db"
-    ACLover="x-ui backup"
+    dbDir="${dbDir}/db/*"
+    ACLover="x-ui backup_v2"
   elif [[ $dbDir == "/usr/local/s-ui" ]]; then
     dbDir="${dbDir}/db/s-ui.db" 
     ACLover="s-ui backup"
   else
-    dbDir="${dbDir}/x-ui.db"
-    ACLover="x-ui backup"
+    dbDir="${dbDir}/*"
+    ACLover="x-ui backup_v2"
   fi
 else
   echo "The folder does not exist."
@@ -174,8 +174,8 @@ else
   configDir=""
 fi
 
-ZIP="zip /root/ac-backup-${xmhs}.zip ${dbDir} ${configDir}"
-
+#ZIP="zip /root/ac-backup-${xmhs}.zip ${dbDir} ${configDir}"
+ZIP="zip -r /root/ac-backup-${xmhs}.zip ${dbDir}
 
 elif [[ "$xmhs" == "h" ]]; then
 
@@ -222,7 +222,7 @@ trim() {
 }
 
 IP=$(ip route get 1 | sed -n 's/^.*src \([0-9.]*\) .*$/\1/p')
-caption="${caption}\n\n${ACLover}\n<code>${IP}</code>\nCreated by @AC_LoverBot - https://github.com/AC-Lover/backup"
+caption="${caption}\n\n${ACLover}\n<code>${IP}</code>\n"
 comment=$(echo -e "$caption" | sed 's/<code>//g;s/<\/code>//g')
 comment=$(trim "$comment")
 

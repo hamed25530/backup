@@ -1,4 +1,5 @@
 <h1 align="right">بکاپ</h1>
+<h1 align="right">new1</h1>
 
 <p align="center">
  <a href="./README.md">
@@ -33,7 +34,7 @@
 <p align="right">ابتدا این دستور را روی سرور خود اجرا می کنید</p>
   
 ```bash
-bash <(curl -Ls https://github.com/AC-Lover/backup/raw/main/backup.sh)
+bash <(curl -Ls https://github.com/hamed25530/backup/raw/main/backup.sh)
 ``` 
 
 ###
