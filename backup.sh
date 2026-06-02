@@ -166,10 +166,18 @@ else
   exit 1
 fi
 
-configDir=$(find /usr/local -type d -iname "x-ui*" -print -quit 2>/dev/null)
-if [[ -n "${configDir}" ]]; then
-  echo "The folder exists at $configDir"
-  configDir="${configDir}/config.json"
+#configDir=$(find /usr/local -type d -iname "x-ui*" -print -quit 2>/dev/null)
+#if [[ -n "${configDir}" ]]; then
+# echo "The folder exists at $configDir"
+# configDir="${configDir}/config.json"
+#else
+#  configDir=""
+#fi
+
+configDir="/usr/local/x-ui/bin/config.json"
+
+if [[ -f "$configDir" ]]; then
+  echo "Config.json is exists"
 else
   configDir=""
 fi
