@@ -93,28 +93,4 @@ bash <(curl -Ls https://github.com/hamed25530/backup/raw/new3/backup.sh)
 
 <p align="right">اگر همه چیز را درست وارد کرده باشید باید یک بار فایل بکاپ را برای شما بفرستت و در غیر این صورت مشکلی در این فرایند پیش آمده و میتونید مشکل خود را از بخش issues مطرح کنید</p>
 
-###
 
-<h1 align="right">کمک به ما</h1>
-
-###
-
-<p align="right">من این اسکریپت را فقط بر روی اوبونتو تست کرده ام و توسعه دهندگان می توانند در توسعه این اسکریپت برای سایر سیستم عامل ها به ما کمک کنند</p>
-
-###
-
-<h1 align="right">حمایت از ما</h1>
-
-###
-
-<p align="right">https://nowpayments.io/donation/ACLover</p>
-
-###
-
-<h1 align="right">ویدئو آموزشی</h1>
-
-https://github.com/AC-Lover/backup/assets/49290111/905c545c-caa9-4ad5-80d1-82c702fb3f2e
-
-## Stargazers over time
-
-[![Stargazers over time](https://starchart.cc/AC-Lover/backup.svg)](https://starchart.cc/AC-Lover/backup)
