@@ -153,13 +153,13 @@ if [[ -n "${dbDir}" ]]; then
   echo "The folder exists at $dbDir"
   if [[ $dbDir == "/opt/freedom/x-ui"* ]]; then
     dbDir="${dbDir}/db/*"
-    ACLover="x-ui backup_v2"
+    ACLover="x-ui backup_v3"
   elif [[ $dbDir == "/usr/local/s-ui" ]]; then
     dbDir="${dbDir}/db/s-ui.db" 
     ACLover="s-ui backup"
   else
     dbDir="${dbDir}/*"
-    ACLover="x-ui backup_v2"
+    ACLover="x-ui backup_v3"
   fi
 else
   echo "The folder does not exist."
