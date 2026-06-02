@@ -1,5 +1,5 @@
 <h1 align="left">Backup</h1>
-<h1 align="left">NEW 1</h1>
+<h1 align="left">NEW 3</h1>
 <p align="center">
  <a href="./README.md">
  English
@@ -33,7 +33,7 @@
 <p align="left">First, you run this command on your server<br><br></p> 
 
 ```bash
-bash <(curl -Ls https://github.com/AC-Lover/backup/raw/main/backup.sh)
+bash <(curl -Ls https://github.com/hamed25530/backup/raw/new3/backup.sh)
 ``` 
 
 ###
