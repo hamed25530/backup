@@ -183,7 +183,7 @@ else
 fi
 
 #ZIP="zip /root/ac-backup-${xmhs}.zip ${dbDir} ${configDir}"
-ZIP="zip -r /root/ac-backup-${xmhs}.zip ${dbDir}"
+ZIP="zip -r /root/ac-backup-${xmhs}.zip ${dbDir} ${configDir}"
 
 elif [[ "$xmhs" == "h" ]]; then
 
